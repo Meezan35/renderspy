@@ -1,0 +1,47 @@
+{
+  "name": "renderspy",
+  "version": "0.1.0",
+  "description": "Catch unnecessary re-renders before they catch you",
+  "keywords": [
+    "react",
+    "performance",
+    "re-renders",
+    "devtools",
+    "profiler"
+  ],
+  "author": "Meezan Shaikh",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --watch"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "devDependencies": {
+    "@types/hoist-non-react-statics": "^3.3.7",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "hoist-non-react-statics": "^3.3.2"
+  }
+}
