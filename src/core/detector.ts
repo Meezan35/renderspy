@@ -105,10 +105,10 @@ export function recordRender(
  */
 export function getReport(): ComponentStats[] {
   return Array.from(registry.values())
-  .map((record) => ({ 
-    ...record.stats,
-    averageTime: record.stats.totalTime / record.stats.renderCount 
-  }))
+  .map((record) => ({
+  ...record.stats,
+  averageTime: Math.round((record.stats.totalTime / record.stats.renderCount) * 100) / 100
+}))
     .sort((a, b) => b.unnecessaryRenders - a.unnecessaryRenders);
 }
 
