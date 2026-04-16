@@ -11,7 +11,7 @@
 > `renderspy` is intended for **development and profiling only**.
 > Remove it from production builds or guard it with `process.env.NODE_ENV !== 'production'`.
 
-<img width="1624" height="804" alt="renderspy dashboard" src="https://github.com/user-attachments/assets/bbc16141-fa48-4bf7-8097-65e992bd27c2" />
+<img width="1624" height="804" alt="renderspy dashboard" src="https://github.com/user-attachments/assets/daaad06a-0c57-47b5-94a4-beac88465f4d"/>
 
 ---
 
